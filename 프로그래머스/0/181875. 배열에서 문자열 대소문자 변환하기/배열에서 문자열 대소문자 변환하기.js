@@ -1,3 +1,8 @@
 function solution(strArr) {
-    return strArr.map((str, idx) => idx % 2 === 0 ? str.toLowerCase() : str.toUpperCase())
+    const arr = [];
+    for (let i = 0; i < strArr.length; i++){
+        if(i % 2 === 0) arr.push(strArr[i].toLowerCase());
+        else arr.push(strArr[i].toUpperCase());
+    }   
+    return arr;
 }
